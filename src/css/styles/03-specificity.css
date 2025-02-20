@@ -23,11 +23,13 @@ body p[class] {
 }
 
 /* id */
+/* id="ai"를 가진 요소의 배경을 핑크색(pink)으로 설정 */
 #ai {
   background-color: pink;
 }
 
 /* 단축 표기법 */
+/* .ai 그리고 .copilot 클래스를 모두 가진 요소에 적용 */
 .ai.copilot {
   border: 10px dotted blue;
 }
