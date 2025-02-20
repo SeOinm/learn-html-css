@@ -1,0 +1,74 @@
+body {
+  background-color: #ffc;
+}
+
+/* 태그 선택자 */
+p {
+  color: red;
+
+  &:hover {
+    background-color: skyblue;
+  }
+
+  &:focus {
+    border: 10px solid red;
+  }
+}
+
+/* 클래스 선택자 */
+.like {
+  color: green;
+}
+
+/* 아이디 선택자 */
+#lion {
+  color: blue;
+}
+
+/* 속성 선택자 */
+[title] {
+  color: purple;
+}
+
+a[href^="https://"]
+{
+  text-decoration: none;
+}
+
+a[href$='pdf'] {
+  background-color: violet;
+}
+
+/* 가상 클래스 선택자 */
+a:link {
+  color: black;
+}
+
+/* 방문 한 후에 올리브 색으로 바뀜 */
+a:visited {
+  color: olive;
+}
+/* 커서 대면 파랑 색으로 바뀜 */
+a:hover {
+  color: blue;
+}
+/* 탭 누르면 포커스가 아쿠아 색으로 바뀜 */
+a:focus {
+  color: aqua;
+}
+
+/* 글자 누르고 있을 때 */
+a:active {
+  background-color: white;
+}
+
+/* 가상 요소 선택자 */
+/* 반드시 content가 들어가야함 */
+/* 드래그가 안됨 */
+h1::before {
+  content: '멋사';
+}
+
+h1::after {
+  content: '13기';
+}
