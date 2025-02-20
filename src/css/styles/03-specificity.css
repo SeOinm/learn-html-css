@@ -1,0 +1,37 @@
+body {
+  color: olive;
+}
+
+h1 {
+  font-size: 1em;
+}
+
+/* class */
+.ai {
+  background-color: lightcoral !important;
+}
+
+/* body가 p의 부모 요소 */
+/* +는 형제 선택 */
+/* 선택자를 구체적으로 쓸 수록 우선순위가 높아짐 */
+body h2 + p {
+  background-color: lightyellow;
+}
+
+body p[class] {
+  background-color: lightblue;
+}
+
+/* id */
+#ai {
+  background-color: pink;
+}
+
+/* 단축 표기법 */
+.ai.copilot {
+  border: 10px dotted blue;
+}
+
+a {
+  color: inherit;
+}
