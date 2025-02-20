@@ -1,0 +1,25 @@
+/* 루트 요소 */
+:root {
+}
+
+body {
+  /* font-family: 'Pretendard Variable'; */
+  font-family: 'SUIT', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+/* font 관련 속성 - 글자크기, 굵기, 기울임꼴 */
+.size {
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.5;
+  font-variant: small-caps;
+  font-family: 'Pretendard Variable', sans-serif;
+  /* font: 14px 'pretendard variable'; */
+}

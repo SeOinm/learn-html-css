@@ -32,6 +32,7 @@ body p[class] {
   border: 10px dotted blue;
 }
 
+/* 상속받은 값을 쓸거라는 뜻 */
 a {
   color: inherit;
 }
