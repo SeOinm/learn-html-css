@@ -1,0 +1,38 @@
+@import '/src/common/mini-reset.css';
+
+body {
+  margin: 50px;
+}
+
+h1 {
+  margin-bottom: 50px;
+}
+
+/* 알림 */
+.notification {
+  border-radius: 0.5rem;
+  padding: 20px 60px;
+
+  position: relative;
+  border: 1px solid #929b90;
+  background: url(/src/assets/svg/pot.svg) no-repeat 20px 50%;
+}
+
+.notification-subject {
+  color: #22be61;
+  font-size: 18px;
+}
+
+.notification-time {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #22be61;
+  font-size: 11px;
+}
+
+.notification-content {
+  color: #929b90;
+  font-size: 14px;
+  margin-top: 10px;
+}
