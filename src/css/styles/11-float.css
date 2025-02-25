@@ -1,0 +1,33 @@
+@import url(/src/common/theme.css);
+
+.card {
+  background: var(--pastel-pink);
+  border: 1px solid green;
+
+  .thumbnail {
+    background: var(--pastel-yellow);
+    /* overflow: hidden; */
+    /* width: 100%; */
+    float: left;
+    border: 1px solid red;
+
+    img {
+      float: left;
+      width: 100px;
+      /* vertical-align: top; 이미지 아래쪽 여백을 없애기 위함 */
+      /* display: block; 이미지 아래쪽 여백을 없애기 위함 */
+      vertical-align: middle;
+    }
+  }
+
+  .subject {
+    background: var(--pastel-blue);
+  }
+
+  .content {
+    /* float 효과를 해제하기 위함 clear 속성을 사용 */
+    clear: both;
+    background: var(--pastel-orange);
+    display: block;
+  }
+}
