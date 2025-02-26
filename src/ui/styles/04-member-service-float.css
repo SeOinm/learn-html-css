@@ -1,0 +1,46 @@
+body {
+  font-family: 'SUIT', sans-serif;
+}
+
+/* 멤버 서비스 */
+.member-service {
+  /* background: yellow; */
+  font-size: 0;
+  display: flow-root;
+
+  a {
+    /* background: skyblue; */
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: inherit;
+    padding: 0.25em;
+
+    &:nth-child(n + 2)::before {
+      content: '|';
+      padding-right: 0.5em;
+    }
+  }
+}
+
+/* 멤버 링크 */
+.member-link {
+  background: pink;
+  list-style: none;
+
+  li {
+    /* 항목들이 가로로 나열되도록 만듦 */
+    float: left;
+
+    span {
+      background: greenyellow;
+      padding: 0 0.5em;
+      float: left;
+    }
+
+    a {
+      background: orange;
+      text-decoration: none;
+      float: left;
+    }
+  }
+}
