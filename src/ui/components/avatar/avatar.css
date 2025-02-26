@@ -1,13 +1,14 @@
 @import '/src/common/modern-reset.css';
 @import '/src/common/a11y.css';
 
+/* 아바타 컴포넌트 */
 /* 인터렉션이 없는 이미지 컴포넌트 */
 .img-avatar {
   --size: 4rem;
   --radius: 50%;
-  --state-online: #4cfe88;
-  --state-offline: #dbdbdb;
-  --border-color: #fff;
+  --state: #dbdbdb;
+  --state-border: #fff;
+  --state-active: #4cfe88;
 
   width: var(--size);
   position: relative;
@@ -25,30 +26,26 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    border: 2px solid var(--border-color);
+    border: 2px solid var(--state-border);
+    background: var(--state);
 
-    &.offline {
-      background: var(--state-offline);
-    }
-
-    &.online {
-      background: var(--state-online);
+    &.is-active {
+      background: var(--state-active);
     }
   }
 }
 
-/* 안터렉션이 있는 버튼 컴포넌트 */
+/* 인터렉션이 있는 버튼 컴포넌트 */
 .button-avatar {
   --size: 4rem;
-  --size: 4rem;
   --radius: 50%;
-  --state-online: #4cfe88;
-  --state-offline: #dbdbdb;
-  --border-color: #fff;
+  --state: #dbdbdb;
+  --state-border: #fff;
+  --state-active: #4cfe88;
 
   position: relative;
   width: var(--size);
-  background: none;
+  background: transparent;
   border: 0;
   padding: 0;
 
@@ -60,17 +57,17 @@
 
   &::after {
     content: '';
-    position: absolute;
+    position: absolute; /* BFC */
     width: 25%;
     aspect-ratio: 1/1;
     border-radius: var(--radius);
     right: 0;
     bottom: 0;
-    border: 2px solid var(--border-color);
-    background: var(--state-offline);
+    border: 2px solid var(--state-border);
+    background: var(--state);
   }
 
   &.is-active::after {
-    background: var(--state-online);
+    background: var(--state-active);
   }
 }
