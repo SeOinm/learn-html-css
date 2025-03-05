@@ -47,6 +47,7 @@
     max-width: 800px;
     margin: 0 auto;
 
+    /* 이 요소들이 그리드의 전체 너비를 차지하도록 설정 */
     .header,
     .navigation,
     .footer {
