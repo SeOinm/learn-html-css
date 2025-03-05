@@ -1,0 +1,21 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+@import '/src/ui/components/avatar/avatar.css';
+
+.img-avatar,
+.state {
+  position: initial !important;
+}
+
+.img-avatar {
+  display: grid;
+
+  img,
+  figcaption {
+    grid-area: 1/1/2/2;
+  }
+
+  figcaption {
+    place-self: end;
+  }
+}
