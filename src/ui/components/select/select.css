@@ -1,0 +1,27 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+
+/* select UI */
+
+body {
+  margin: 1.25rem;
+}
+.selectbox {
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 5px;
+  padding-block: 0.5rem;
+  width: 110px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+
+  select {
+    border: none;
+    appearance: none;
+
+    option {
+    }
+  }
+}
