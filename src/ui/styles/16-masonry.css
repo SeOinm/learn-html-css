@@ -1,0 +1,41 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+
+.masonry-layout {
+  padding: 1.25rem;
+
+  @media (min-width: 768px) {
+    columns: 2;
+  }
+
+  @media (min-width: 1024px) {
+    columns: 4;
+  }
+}
+
+figure {
+  break-inside: avoid;
+  position: relative;
+  border: 1px solid black;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  img {
+    width: 100%;
+    filter: sepia(100%);
+  }
+
+  figcaption {
+    width: calc(100% - 2rem);
+    color: white;
+    background: black;
+    position: absolute;
+    bottom: 1rem;
+    overflow: hidden;
+
+    padding: 1.25rem;
+    opacity: 0.5;
+  }
+}
